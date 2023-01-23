@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Jiří Lopatář" name="author">
+	<meta content="Link de-shortener, unshortener, deshortener" name="keywords">
+	<meta content="Link de-shortener - see what hides behind!" name="description">
+	<title>Link de-shortener</title>
+	<style>
+		body
+		{
+			text-align: center;
+		}
+
+		footer
+		{
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body><h1>Link de-shortener</h1>
+<h3>See what hides behind!</h3>
+<form method="POST" action="/api/deshorten">
+	<input type="url" name="url"  placeholder="URL" required>
+	<button type="submit">Deshorten</button>
+</form>
+<p>The de-shortener follows maximally 5 redirects!</p>
+</body>
+
+<footer>
+	<a href="https://github.com/lopatar/link-deshortener" target="_blank">Source code</a>
+</footer>
+</html>

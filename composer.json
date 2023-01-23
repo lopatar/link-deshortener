@@ -1,0 +1,22 @@
+{
+    "name": "lopatar/link-deshortener",
+    "description": "Link de-shortener",
+    "type": "project",
+    "autoload":{
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {
+        "lopatar/php-sdkv2": "^2.5",
+        "ext-openssl": "*",
+      "ext-curl": "*"
+    },
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Jiří Lopatář",
+            "email": "jiri@lopatar.me"
+        }
+    ]
+}
