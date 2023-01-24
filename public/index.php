@@ -11,7 +11,7 @@ $config = new Config();
 
 $app = new App($config);
 
-$app->view('/', 'Api.html');
+$app->view('/', 'Home.html');
 $app->post('/api/deshorten', 'Api::deshorten');
 
 $app->run();
