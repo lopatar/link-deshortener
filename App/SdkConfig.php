@@ -6,7 +6,7 @@ namespace App;
 use Sdk\Http\Entities\CookieSameSite;
 use Sdk\IConfig;
 
-final class Config implements IConfig
+final class SdkConfig implements IConfig
 {
 	/**
 	 * If false, we output {@see Exception::$message} thrown in {@see Route::execute()} to {@see Response::$text}
