@@ -203,4 +203,12 @@ final class Config implements IConfig
 	{
 		return ['cost' => 13];
 	}
+
+    /**
+     * Max redirects the de-shortener should follow, should be at least 1
+     */
+    public function getDeshortenerMaxRedirects(): int
+    {
+        return 5;
+    }
 }

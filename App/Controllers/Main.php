@@ -1,14 +1,21 @@
 <?php
-declare(strict_types=1);
 
 namespace App\Controllers;
 
 use Sdk\Http\Request;
 use Sdk\Http\Response;
 
-final class Api
+final class Main
 {
-	public static function deshorten(Request $request, Response $response, array $args): Response
+    public static function renderHome(Request $request, Response $response, array $args): Response
+    {
+        $response->createView('Home.php')
+            ?->setProperty('MAX_REDIRECTS', 5);
+
+        return $response;
+    }
+
+    public static function deshorten(Request $request, Response $response, array $args): Response
     {
         $url = $request->getPost('url');
 
