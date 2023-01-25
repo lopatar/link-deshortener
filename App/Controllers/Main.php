@@ -23,6 +23,7 @@ final class Main
 
         $ch = curl_init($url);
 
+        curl_setopt($ch, CURLOPT_USERAGENT, 'LinkDe-shortener/1.0 (+https://deshort.lopatar.me)');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($ch, CURLOPT_MAXREDIRS, 5);
