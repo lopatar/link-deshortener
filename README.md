@@ -1,4 +1,4 @@
-# Link de-shortener
+.# Link de-shortener
 
 Automatically de-shorten shortened links!
 
@@ -8,4 +8,4 @@ Automatically de-shorten shortened links!
 
 # Try it
 
-[Click me!](https://deshort.lopatar.me)
+[Click me!](https://deshort.lopatar.dev)
